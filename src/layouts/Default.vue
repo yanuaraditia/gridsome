@@ -1,6 +1,7 @@
 <template>
   <div class="__vueby">
     <nav class="navbar is-fixed-top header-top" role="navigation" aria-label="main navigation">
+      <div class="header-bar"></div>
       <div class="navbar-brand">
         <g-link to="/" class="navbar-item"><g-image src="~/favicon.png" width="24"/></g-link>
         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -36,10 +37,14 @@
           </div>
         </div>
       </div>
+      <div class="navbar-end">
+        <button class="navbar-item dark-mode"><i class="ms-Icon dark-mode-icon ms-Icon--Sunny"></i></button>
+      </div>
     </nav>
     <main>
       <slot/>
     </main>
+    <footer class="footer">Sticky Footer</footer>
   </div>
 </template>
 

@@ -9,6 +9,17 @@ module.exports = {
   plugins: [
     {
       use: `gridsome-plugin-netlify-cms`
-    }
+    },
+    {
+      use: "gridsome-plugin-service-worker",
+      options: {
+        networkFirst: {
+          routes: [
+            "/",
+            /\.(js|css|png)$/, // means "every JS, CSS, and PNG images"
+          ],
+        },
+      },
+    },
   ]
 }

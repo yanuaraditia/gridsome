@@ -9,9 +9,11 @@
   "dependencies": {
     "gridsome": "^0.7.0",
     "gridsome-plugin-netlify-cms": "^1.0.9",
+    "jquery": "^3.4.1",
     "netlify-cms": "^2.10.29"
   },
   "devDependencies": {
-    "gridsome-plugin-manifest": "^0.3.4"
+    "gridsome-plugin-manifest": "^0.3.4",
+    "gridsome-plugin-service-worker": "^0.1.4"
   }
 }
