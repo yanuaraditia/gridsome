@@ -25,7 +25,7 @@ module.exports = {
       use: "gridsome-plugin-manifest",
       options: {
           background_color: "#fff",
-          icon_path: "./src/assets/img/icon.png",
+          icon_path: "./src/favicon.png",
           name: "Yanuar Aditia",
           short_name: "Yanuar",
           theme_color: "#FFcc00",
