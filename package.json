@@ -1,0 +1,17 @@
+{
+  "name": "y-g",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "gridsome": "^0.7.0",
+    "gridsome-plugin-netlify-cms": "^1.0.9",
+    "netlify-cms": "^2.10.29"
+  },
+  "devDependencies": {
+    "gridsome-plugin-manifest": "^0.3.4"
+  }
+}
