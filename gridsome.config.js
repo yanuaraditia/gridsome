@@ -21,5 +21,16 @@ module.exports = {
         },
       },
     },
+    {
+      use: "gridsome-plugin-manifest",
+      options: {
+          background_color: "#fff",
+          icon_path: "./src/assets/img/icon.png",
+          name: "Yanuar Aditia",
+          short_name: "Yanuar",
+          theme_color: "#FFcc00",
+          lang: "en",
+      },
+    }
   ]
 }
