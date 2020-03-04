@@ -23,6 +23,18 @@ module.exports = {
           theme_color: "#FFcc00",
           lang: "en",
       },
-    }
+    },
+    {
+      use: "gridsome-plugin-htaccess",
+      options: {
+        textCompression: [
+          "text/html",
+          "application/javascript",
+          "text/css",
+          "image/png",
+          "image/jpeg",
+        ],
+      },
+    },
   ]
 }
