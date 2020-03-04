@@ -8,20 +8,28 @@ module.exports = {
   siteName: 'Yanuar Aditia',
   plugins: [
     {
+      use: "gridsome-plugin-service-worker",
+    },
+    {
       use: `gridsome-plugin-netlify-cms`
     },
     {
-      use: "gridsome-plugin-service-worker"
-    },
-    {
-      use: "gridsome-plugin-manifest",
+      use: "gridsome-plugin-pwa",
       options: {
-          background_color: "#fff",
-          icon_path: "./src/favicon.png",
-          name: "Yanuar Aditia",
-          short_name: "Yanuar",
-          theme_color: "#FFcc00",
-          lang: "en",
+        title: 'Yanuar Aditia',
+        startUrl: '/',
+        display: 'standalone',
+        statusBarStyle: 'default',
+        manifestPath: 'manifest.json',
+        disableServiceWorker: true,
+        serviceWorkerPath: 'service-worker.js',
+        cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg',
+        shortName: 'Yanuar',
+        themeColor: '#ffcc00',
+        backgroundColor: '#ffffff',
+        icon: './src/favicon.png', // must be provided like 'src/favicon.png'
+        msTileImage: '',
+        msTileColor: '#ffcc00'
       },
     },
     {

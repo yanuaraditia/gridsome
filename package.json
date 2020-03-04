@@ -10,6 +10,7 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "gridsome": "^0.7.0",
     "gridsome-plugin-netlify-cms": "^1.0.9",
+    "gridsome-plugin-pwa": "0.0.13",
     "jquery": "^3.4.1",
     "netlify-cms": "^2.10.29"
   },
